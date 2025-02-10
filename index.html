@@ -1,9 +1,106 @@
 <!DOCTYPE HTML>
 <head>
+    <meta http-equiv="refresh" content="1;url=https://cosmocreeper.github.io/fbcss">
+
   <title>The FBC Sermon Search</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    body {
+        margin: 0;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Poppins';
+      font-weight: 500;
+      text-align: center;
+    }
+
+    #center {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Poppins';
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #url-bubble {
+        background-color: #5D8B9E;
+        width: 175px;
+        height: 75px;
+        color: white;
+        font-family: 'Poppins';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 12px 12px 0 0;
+        text-align: center;
+        animation: 400ms slidein forwards;
+    }
+
+    #url-bubble:hover {
+        animation: 400ms slideout forwards;
+    }
+
+    @keyframes slidein {
+        0% {
+            transform: translateX(-50%) translateY(-24px);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes slideout {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-24px);
+        }
+    }
+
+    #desc {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    #url {
+        width: 100%;
+        margin-top: 1px;
+        display: block;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  </style>
 </head>
 <body>
-  <h1>Important Notice</h1>
-  <h4>We have changed our repo name to fbcss to be more accurate (FBC Sermon Search, instead of Pastor Rob Sermon Search), meaning that you will from now on have to go to <a href="https://cosmocreeper.github.io/fbcss">https://cosmocreeper.github.io/fbcss</a>.</h4>
-  <h5>We also recommend changing your bookmarks to the new url. Also, this redirection page will be switched from a manual link click to an automatic redirect on Feb. 10th, 2025.</h5>
+  <h1>Redirecting...</h1>
+  <div id="center">
+    <p>We have changed our repo name to fbcss to be more accurate, meaning that you will from now on have to go to <a href="https://cosmocreeper.github.io/fbcss">https://cosmocreeper.github.io/fbcss</a>.</p>
+    <p>We also recommend redownloading the home screen app, and changing your bookmarks to the new url.</p>
+  </div>
+  <a href="https://cosmocreeper.github.io/fbcss">
+    <div id="url-bubble">
+        <p id="desc">Redirect not working?</p>
+        <p id="url">Go to new URL!</p>
+        <svg onclick="loadFBC()" class="logo" preserveAspectRatio="xMidYMid meet" data-bbox="0.595 0.694 32.311 32.306" viewBox="0.595 0.694 32.311 32.306" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+            <g>
+                <path d="M16.6 33h1.3V15.7h6.2v-2.4h-6.2V6.5h-2.3v6.8H9.4v2.4h6.2v14.7c-7.5-.7-13-7.3-12.4-14.8.7-7.5 7.3-13 14.8-12.4 7.5.7 13 7.3 12.4 14.8-.5 6-5 11-11 12.2v2.5c8.8-1.5 14.7-9.8 13.3-18.6C31.2 5.4 22.9-.5 14.1.9 5.3 2.4-.6 10.7.8 19.5c1.3 7.7 8 13.4 15.8 13.5z" data-color="1" fill="#fff"></path>
+            </g>
+        </svg>
+    </div>
+  </a>
 </body>
